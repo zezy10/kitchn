@@ -1,0 +1,115 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: Arial, Tahoma;
+}
+.custom {
+  margin: 20px auto;
+  width: 430px;
+  height: 500px;
+  padding: 60px 35px 35px 35px;
+  border-radius: 40px;
+  background: #ecf0f3;
+  box-shadow: 13px 13px 20px #cbced1,-13px -13px 20px #ffffff;
+}
+.custom h3{
+  text-align: center;
+  margin-bottom: 15px;
+}
+.custom .length  div{
+  display: flex;
+  justify-content: space-between;
+
+}
+.custom .length  div input{
+  width: calc(100% - 90px);
+  margin-right: 20px;
+  padding: 10px ;
+  margin-bottom: 5px;
+  background: none;
+  border: none;
+  box-shadow: inset 8px 8px 8px #cbced1,inset -8px -8px 8px #ffffff;
+  border-radius:16px ;
+}
+.custom .length  div input:focus{
+  outline: none;
+}
+.custom .length  div p{
+  width: 80px;
+}
+.custom > div {
+  padding: 5px 0;
+}
+.custom .radio-input  {
+text-align: right
+}
+.custom .radio-input div {
+margin-bottom: 7px;
+}
+.custom input[type="radio"] {
+  -webkit-appearance: none;
+  appearance: none;
+}
+.custom label {
+  position: relative;
+  display: inline-block;
+  padding-left: 25px;
+  text-align: right;
+  width: 140px;
+
+}
+.custom label::before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  border: 1px solid #0075ff;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background: white;
+}
+.custom input[type="radio"]:checked + label::after,
+.custom input[type="radio"]:not(:checked):hover + label::after {
+  content: "";
+  background-color: #0075ff;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  left: 4px;
+  top: 4px;
+}
+.custom input[type="radio"]:not(:checked):hover + label::after {
+  opacity: 0.2;
+}
+.custom input[type="radio"]:checked + label {
+  color: #0075ff;
+}
+.count{
+  display: block;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  text-align: center;
+  margin: 5px auto;
+  color: white;
+  background-color: #24cfaa;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.last-price{
+  width: 500px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+  border: 1px solid #0075ff;
+  padding: 10px 15px;
+  max-width: 90%;
+  margin: auto;
+}
